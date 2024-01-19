@@ -65,7 +65,7 @@ describe('Автотесты для формы авторизации', function
 
 
 
-it('Cтрочные буквы в логине', function () {
+    it('Cтрочные буквы в логине', function () {
         cy.visit('https://login.qa.studio/'); // Посетили сайт
         cy.get('#mail').type('GerMan@Dolnikov.ru'); //Ввели логин с ошибкой валидации
         cy.get('#pass').type('iLoveqastudio1'); //Ввели пароль
